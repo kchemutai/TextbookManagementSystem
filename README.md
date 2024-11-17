@@ -33,16 +33,7 @@ This proof of concept demonstrates the core operations of the system, including 
    - Viewing recent transactions.
 
 **Project Structure**
-TextbookManagementSystem/
-│
-├── book.py # Defines the Book class.
-├── book_inventory.py # Manages book inventory using a hash table.
-├── transaction.py # Defines the Transaction class.
-├── recent_transactions.py # Implements stack operations for recent transactions.
-├── borrow_history.py # Defines BorrowHistoryNode for borrowing history.
-├── linked_list.py # Implements LinkedList for managing borrowing history.
-├── main.py # Entry point for the application.
-└── README.md # Project description and instructions.
+![alt text](image.png)
 
 **License**
 This project is licensed under Kevin Chemutai License. See LICENSE for more information.
