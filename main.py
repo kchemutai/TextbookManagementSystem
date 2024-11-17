@@ -1,18 +1,34 @@
 from book_inventory import add_book, retrieve_book, update_availability
 from recent_transactions import add_transaction, get_recent_transaction
-import recent_transactions
 from transaction import Transaction
 
 # Adding books
 add_book("12345", "Python Programming", "John Doe", "1st", "Technology")
 add_book("67890", "Data Structures", "Jane Smith", "2nd", "Computer Science")
 
-# Retrieving and updating a book
-book = retrieve_book("12345")
-print(f"Retrieved: {book.title}, Available: {book.availability}")
+# Error handling demonstration
+try:
+    # Retrieving a book
+    book = retrieve_book("12345")
+    print(f"Retrieved: {book.title}, Available: {book.availability}")
+except KeyError as e:
+    print(e)
+
+try:
+    # Update availability for an existing book
+    update_availability("12345", False)
+    print(f"Updated availability for ISBN 12345.")
+except KeyError as e:
+    print(e)
+
+try:
+    # Update availability for a non-existent book
+    update_availability("99999", False)
+except KeyError as e:
+    print(e)
 
 # Borrow a book
-update_availability("12345", False)
+book = retrieve_book("12345")
 book.borrow_history.add_borrow_record("Alice", "2024-11-17")
 add_transaction(Transaction("12345", "Alice", "borrow", "2024-11-17"))
 
@@ -27,4 +43,3 @@ while True:
     if transaction is None:
         break
     print(f"Transaction: {transaction.action} {transaction.isbn} by {transaction.user} on {transaction.date}")
-
