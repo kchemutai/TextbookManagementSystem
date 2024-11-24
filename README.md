@@ -31,6 +31,7 @@ This proof of concept demonstrates the core operations of the system, including 
    - Adding books to the inventory.
    - Borrowing and returning books.
    - Viewing recent transactions.
+5. Run the tests: python -m unittest discover -s tests
 
 **Project Structure**
 ![alt text](image.png)

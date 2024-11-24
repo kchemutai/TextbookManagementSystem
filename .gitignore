@@ -1,0 +1,90 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+.ENV/
+
+# macOS specific
+.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# pytest
+.cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+
+# Logs and other output
+*.log
+*.out
+*.err
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# PEP 582 (used by some Python packaging systems)
+__pypackages__/
+
+# Distribution / Packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Pipenv
+Pipfile
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# Test results
+*.tox
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# sphinx documentation
+docs/_build/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Pyre
+.pyre/
